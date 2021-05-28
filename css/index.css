@@ -3,6 +3,8 @@ body{
   background-image: url("../bg.jpg");
   background-size: cover;
   color: rgb(255, 255, 255);
+  max-width: 100%;
+  overflow-x: hidden;
 
 }
 
@@ -304,7 +306,7 @@ h1{
 
 @media only screen and (max-width: 768px) {
   #work img{
-    height: 200px;
+    height: 250px;
     width: auto;
   }
 }

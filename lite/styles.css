@@ -1,0 +1,161 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #1a1a2e;
+  color: #eaeaea;
+  overflow-x: hidden;
+}
+.parent-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #444;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #00aaff;
+}
+
+header nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #eaeaea;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #00aaff;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 6rem;
+  color: #00aaff;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 2rem;
+  line-height: 1.6;
+  color: #eaeaea;
+  margin-bottom: 30px;
+}
+
+.hero a {
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: #00aaff;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero a:hover {
+  background: #0077cc;
+}
+
+.projects {
+  margin-top: 50px;
+}
+
+.projects h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00aaff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #252539;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.project-card h4 {
+  color: #00aaff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #ccc;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  border-top: 1px solid #444;
+}
+
+footer p {
+  color: #888;
+}
+
+footer a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h2,
+.hero p,
+.hero a {
+  animation: fadeIn 1s ease both;
+}
+
+.projects-grid {
+  animation: fadeIn 1.5s ease both;
+}

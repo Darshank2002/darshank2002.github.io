@@ -1,5 +1,0 @@
-I'm a 19 year old SciTech Geek persuing Computer Engineering Batchelors Degree from Savitribai Phule Pune University(SPPU).
-I am a self taught ReactJS developer. I also spend my time practicing Competitive Programming (in Python and C++).
-I am currently working on my ambitious project "TheEngineeringSphere". Which aims to provide Everything that an Engineer needs!
-Apart from Programming and Development I am a Die Hard Space Tech Enthusiast.
-I am really looking forward to work in the Space sector backed by my Programming Skills.
